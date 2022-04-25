@@ -7,6 +7,7 @@ import (
 	"github.com/andrewyang17/goFurtherAPI/internal/jsonlog"
 	"github.com/andrewyang17/goFurtherAPI/internal/mailer"
 	"os"
+	"sync"
 	"time"
 
 	"github.com/andrewyang17/goFurtherAPI/internal/data"
@@ -44,6 +45,7 @@ type application struct {
 	logger *jsonlog.Logger
 	models data.Models
 	mailer mailer.Mailer
+	wg     sync.WaitGroup
 }
 
 func main() {
