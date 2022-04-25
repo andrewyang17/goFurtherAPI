@@ -6,6 +6,10 @@ github.com/julienschmidt/httprouter
 github.com/lib/pq
 github.com/lib/pq/oid
 github.com/lib/pq/scram
+# golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
+## explicit
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
 # golang.org/x/time v0.0.0-20220411224347-583f2d630306
 ## explicit
 golang.org/x/time/rate
