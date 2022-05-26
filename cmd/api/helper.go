@@ -138,7 +138,7 @@ func (app *application) background(fn func()) {
 
 	go func() {
 		defer app.wg.Done()
-		
+
 		defer func() {
 			if err := recover(); err != nil {
 				app.logger.PrintError(fmt.Errorf("%s", err), nil)
