@@ -5,14 +5,16 @@ import (
 	"crypto/sha256"
 	"database/sql"
 	"encoding/base32"
-	"github.com/andrewyang17/goFurtherAPI/internal/validator"
 	"math/rand"
 	"time"
+
+	"github.com/andrewyang17/goFurtherAPI/internal/validator"
 )
 
 const (
 	ScopeActivation     = "activation"
 	ScopeAuthentication = "authentication"
+	ScopePasswordReset  = "password-reset"
 )
 
 type Token struct {
